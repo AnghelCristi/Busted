@@ -1,0 +1,26 @@
+{
+    "name": "Busted",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "js//background.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "html&css//index.html",
+        "default_title": "Busted"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "icons": {},
+    "background": {
+        "service_workers": "js//background.js"
+    }
+}
